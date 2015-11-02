@@ -4,8 +4,10 @@ The purpose of this app is to allow users to securely exchange files over a netw
 
 The app uses Cipher Block Chaining(CBC) protocol to encrypt files using keys traded with the Diffie-Hellman key-exchange protocol. Files are sent through a SSL encrypted network, and stored on Facebook's Parse cloud storage.
 
-This app is supported on all Android versions >= 4.0.3
-It can be installed using the provided APK in Releases.
+This app is supported on all Android versions >= 4.0.3 .
+
+It can be installed using the provided APK in Releases. (https://github.com/rchawla8/Cipher/releases/tag/0.1)
+
 
 Usage:
   - To use, launch the app and select a user to login as.
