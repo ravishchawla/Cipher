@@ -6,7 +6,7 @@ import android.view.View;
 
 import java.io.File;
 import cipher.root.com.cipher.Adapters.Session;
-import cipher.root.com.cipher.types.ContentFile;
+import cipher.root.com.cipher.Types.ContentFile;
 
 /**
  * Adapter for choosing a file. Creates a ContentFile instance

@@ -1,5 +1,5 @@
 /**Ravish Chawla**/
-package cipher.root.com.cipher.Activity;
+package cipher.root.com.cipher.Activities;
 
 import android.app.AlertDialog;
 import android.view.LayoutInflater;

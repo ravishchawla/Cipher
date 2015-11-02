@@ -8,7 +8,7 @@ import android.widget.*;
 
 import cipher.root.com.cipher.Adapters.Session;
 import cipher.root.com.cipher.R;
-import cipher.root.com.cipher.types.ContentFile;
+import cipher.root.com.cipher.Types.ContentFile;
 
 /**
  * Adapter for Messages list. Populates all items in Main list view

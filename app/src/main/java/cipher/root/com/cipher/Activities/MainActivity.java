@@ -1,5 +1,5 @@
 /**Ravish Chawla**/
-package cipher.root.com.cipher.Activity;
+package cipher.root.com.cipher.Activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -22,7 +22,7 @@ import cipher.root.com.cipher.Adapters.*;
 import cipher.root.com.cipher.LayoutAdapters.*;
 import cipher.root.com.cipher.Returnable.*;
 import cipher.root.com.cipher.R;
-import cipher.root.com.cipher.types.*;
+import cipher.root.com.cipher.Types.*;
 
 /**
  * Main Activity, responsible for showing List of Messages for users.

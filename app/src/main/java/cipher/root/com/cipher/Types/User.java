@@ -1,5 +1,5 @@
 /**Ravish Chawla*/
-package cipher.root.com.cipher.types;
+package cipher.root.com.cipher.Types;
 
 import com.parse.ParseObject;
 

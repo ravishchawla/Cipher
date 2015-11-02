@@ -4,7 +4,6 @@ package cipher.root.com.cipher.LayoutAdapters;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
-import cipher.root.com.cipher.Activity.FileSendActivity;
 import cipher.root.com.cipher.Adapters.*;
 import cipher.root.com.cipher.Returnable.*;
 

@@ -7,9 +7,9 @@ import com.parse.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import cipher.root.com.cipher.Activity.FileSendActivity;
+import cipher.root.com.cipher.Activities.FileSendActivity;
 import cipher.root.com.cipher.Returnable.*;
-import cipher.root.com.cipher.types.*;
+import cipher.root.com.cipher.Types.*;
 
 
 /**

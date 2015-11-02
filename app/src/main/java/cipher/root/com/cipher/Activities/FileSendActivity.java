@@ -1,5 +1,5 @@
 /**Ravish Chawla**/
-package cipher.root.com.cipher.Activity;
+package cipher.root.com.cipher.Activities;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -12,7 +12,7 @@ import java.util.*;
 import cipher.root.com.cipher.Adapters.*;
 import cipher.root.com.cipher.LayoutAdapters.*;
 import cipher.root.com.cipher.R;
-import cipher.root.com.cipher.types.*;
+import cipher.root.com.cipher.Types.*;
 import cipher.root.com.cipher.Returnable.*;
 
 /**

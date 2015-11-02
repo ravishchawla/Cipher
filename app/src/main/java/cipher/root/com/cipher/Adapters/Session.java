@@ -6,8 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import cipher.root.com.cipher.Activity.FileSendActivity;
-import cipher.root.com.cipher.types.*;
+import cipher.root.com.cipher.Activities.FileSendActivity;
+import cipher.root.com.cipher.Types.*;
 
 /**
  * Maintain session information, and provide utility functions for transactions
