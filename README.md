@@ -6,7 +6,11 @@ The app uses Cipher Block Chaining(CBC) protocol to encrypt files using keys tra
 
 This app is supported on all Android versions >= 4.0.3 .
 
-It can be installed using the provided APK in Releases. (https://github.com/rchawla8/Cipher/releases/tag/0.1)
+It can be installed using the provided APK in Releases. 
+
+Releases: https://github.com/rchawla8/Cipher/releases/tag/0.1
+
+Source: https://github.com/rchawla8/Cipher/tree/master/app/src/main/java/cipher/root/com/cipher
 
 
 Usage:
