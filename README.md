@@ -23,7 +23,7 @@ App Limitations:
 ##Project Structure
 This project is divided into 5 packages:
 
-- Activity: contains Models for Views, which control user interactivity within those panes.
+- Activities: contains Models for Views, which control user interactivity within those panes.
 - Adapters: contains Adapters for core subsystems in the app.
 - LayoutAdapters: contains Models for subViews, such as dialogs and listeners.
 - Returnable: contains interfaces for implementing callback functions.
