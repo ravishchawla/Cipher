@@ -25,6 +25,7 @@ Usage:
 App Limitations:
   - Files sent must be located in the Downloads folder on the device. This is a limitation of Android because absolute fille paths cannot be retreived without permission of the user.
   - Files will be downloaded to the same folder, with a prefix '_'
+  - Files cannot have periods ('.') in the filename, other than a period separating the name and extension.
 
 ##Project Structure
 This project is divided into 5 packages:
