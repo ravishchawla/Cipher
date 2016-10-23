@@ -1,10 +1,10 @@
 # Cipher
-######Author: Ravish Chawla
+###### Author: Ravish Chawla
 The purpose of this app is to allow users to securely exchange files over a network.
 
 The app uses Cipher Block Chaining(CBC) protocol to encrypt files using keys traded with the Diffie-Hellman key-exchange protocol. Files are sent through a SSL encrypted network, and stored on Facebook's Parse cloud storage.
 
-This app is supported on all Android versions >= 4.0.3 .
+This app is supported on Android versions >= 4.0.3 and <= 6.0.
 
 It can be installed using the provided APK in Releases. 
 
@@ -35,3 +35,5 @@ This project is divided into 5 packages:
 - LayoutAdapters: contains Models for subViews, such as dialogs and listeners.
 - Returnable: contains interfaces for implementing callback functions.
 - Types: contains custom data types.
+
+<sub> App icon licensed from [FlatIcon Free License](http://file000.flaticon.com/downloads/license/license.pdf) </sub>
