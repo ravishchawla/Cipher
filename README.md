@@ -8,9 +8,9 @@ This app is supported on Android versions >= 4.0.3 and <= 6.0.
 
 It can be installed using the provided APK in Releases. 
 
-Releases: https://github.com/rchawla8/Cipher/releases/tag/0.1
+Releases: https://github.com/ravishchawla/Cipher/releases
 
-Source: https://github.com/rchawla8/Cipher/tree/master/app/src/main/java/cipher/root/com/cipher
+Source: https://github.com/ravishchawla/Cipher/tree/master/app/src/main/java/cipher/root/com/cipher
 
 
 Usage:
