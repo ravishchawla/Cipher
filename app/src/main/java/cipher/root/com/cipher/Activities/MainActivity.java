@@ -1,9 +1,13 @@
 /**Ravish Chawla**/
 package cipher.root.com.cipher.Activities;
 
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,6 +23,7 @@ import com.parse.ParseUser;
 import java.util.List;
 
 import cipher.root.com.cipher.Adapters.*;
+import cipher.root.com.cipher.BuildConfig;
 import cipher.root.com.cipher.LayoutAdapters.*;
 import cipher.root.com.cipher.Returnable.*;
 import cipher.root.com.cipher.R;
@@ -30,11 +35,13 @@ import cipher.root.com.cipher.Types.*;
  */
 public class MainActivity extends AppCompatActivity implements ListReturnable<ContentFile>, ObjectReturnable<User> {
 
-    ParseAdapter parseAdapter;
-    ListView messagesList;
-    MessageListAdapter listAdapter;
+    private static final int FILE_ACCESS_IDENTIFIER = 0x1;
 
-    ContentFile[] messageFiles;
+    private ParseAdapter parseAdapter;
+    private ListView messagesList;
+    private MessageListAdapter listAdapter;
+
+    private ContentFile[] messageFiles;
 
 
     @Override
@@ -80,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements ListReturnable<Co
         this.parseAdapter.init();
         ParseUser.getCurrentUser().logOut();
 
+        this.updateDynamicPermissions();
     }
 
     @Override
@@ -142,6 +150,40 @@ public class MainActivity extends AppCompatActivity implements ListReturnable<Co
         if(requestCode == FileChooser.FILE_INTENT_CODE) {
             FileChooser.onActivityResult(requestCode, resultCode, data);
         }
+    }
+
+	/**
+     * Check for Android M permissions, specifically File External Storage
+     */
+    @TargetApi(Build.VERSION_CODES.M)
+    public void updateDynamicPermissions() {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
+                this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            if (this.shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                Toast.makeText(this, "Local File Access is required to use this app", Toast.LENGTH_LONG).show();
+            } else {
+                this.requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, MainActivity.FILE_ACCESS_IDENTIFIER);
+            }
+        }
+    }
+
+	/**
+     * Handle user response to Permission Request
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        if(requestCode == MainActivity.FILE_ACCESS_IDENTIFIER) {
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                return;
+            } else {
+                Toast.makeText(this, "Local File Access is required to use this app", Toast.LENGTH_LONG).show();
+            }
+        }
+
+        return;
     }
 
 }

@@ -31,9 +31,8 @@ public class ParseAdapter {
 
     public static void init() {
         Parse.enableLocalDatastore(Session.getActiveContext());
-        Parse.initialize(Session.getActiveContext(), "RZ0f3Bbv1GS3P8ZUK9RpcJ1ZGk2jXdLlCbLX4g7Q", "L9kS3vniCQjwePVvHEBRL84XJQaab8xLQz2z1o87");
+        Parse.initialize(new Parse.Configuration.Builder(Session.getActiveContext()).applicationId("RZ0f3Bbv1GS3P8ZUK9RpcJ1ZGk2jXdLlCbLX4g7Q").clientKey("L9kS3vniCQjwePVvHEBRL84XJQaab8xLQz2z1o87").server("https://parseapi.back4app.com").build());
     }
-
 
     /**Returns list of all messages for current user*/
     public void getMessagesList(final ListReturnable<ContentFile> callback) {

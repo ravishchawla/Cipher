@@ -26,6 +26,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
     compile 'com.parse.bolts:bolts-android:1.+'
-
-    compile files('libs/Parse-1.10.3.jar')
+    compile files('libs/Parse-1.13.0.jar')
 }
