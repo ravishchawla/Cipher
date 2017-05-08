@@ -8,9 +8,9 @@ This app is supported on Android versions >= 4.0.3 and <= 6.0.
 
 It can be installed using the provided APK in Releases. 
 
-Releases: https://github.com/rchawla8/Cipher/releases/tag/0.1
+Releases: https://github.com/ravishchawla/Cipher/releases
 
-Source: https://github.com/rchawla8/Cipher/tree/master/app/src/main/java/cipher/root/com/cipher
+Source: https://github.com/ravishchawla/Cipher/tree/master/app/src/main/java/cipher/root/com/cipher
 
 
 Usage:
@@ -23,7 +23,7 @@ Usage:
   - Press Encrypt to encrypt the file, then press Send to send it.
 
 App Limitations:
-  - Files sent must be located in the Downloads folder on the device. This is a limitation of Android because absolute fille paths cannot be retreived without permission of the user.
+  - Files sent must be located in the Downloads folderThis on the device. This is not a limitation of the Android OS but limited by the current level of implementation. 
   - Files will be downloaded to the same folder, with a prefix '_'
   - Files cannot have periods ('.') in the filename, other than a period separating the name and extension.
 
