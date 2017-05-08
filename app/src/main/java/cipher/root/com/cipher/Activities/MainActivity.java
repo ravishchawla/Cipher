@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements ListReturnable<Co
         final String[] users = getResources().getStringArray(R.array.users);
         final ObjectReturnable<User> self = this;
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Coose User to Login as");
+        builder.setTitle("Choose User to Login as");
         builder.setItems(R.array.users, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
